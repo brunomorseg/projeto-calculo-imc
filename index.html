@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header>
+        <h1 class="header-h1">Cálculo <span class="header-span">de IMC</span></h1>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="container-section">
+                <h1 class="container-h1">Temperatura</h1>
+                <p class="container-p">
+                    O Índice de Massa Corporal (IMC) é uma medida usada para avaliar se uma pessoa possui um peso saudável em relação à sua altura. Para calcular o IMC, você utiliza a seguinte fórmula:
+
+                    IMC = Peso (kg) / (Altura (m))^2
+                    
+                    Onde:
+                    
+                    Peso: é expresso em quilogramas.
+                    Altura: é expressa em metros.
+                </p>
+            </div>
+
+            <hr>
+
+           
+           <div class="container-section-2">
+               <input class="input_1" type="number" placeholder="Coloque seu peso" value="peso">
+               <input class="input_2" type="number" placeholder="Coloque sua altura" value="altura">
+                <button onclick="converter()" class="container-button">Calcular</button>
+                <button class="container-button" onclick="resetar()">Resetar</button>
+           </div>
+        </div>
+
+        <div class="container">
+            <div class="amostra-resultado"></div>
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
